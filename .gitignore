@@ -1,0 +1,81 @@
+# Secrets: keep local environment files private; allow a sanitized template
+.env
+.env.*
+!.env.example
+
+# Python environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.idea/
+**/.idea/
+.pytest_cache/
+**/.pytest_cache/
+.mypy_cache/
+**/.mypy_cache/
+.ruff_cache/
+**/.ruff_cache/
+
+# Local vector databases and embeddings
+chroma_db/
+**/chroma_db/
+.chroma/
+**/.chroma/
+.local/
+**/.local/
+.cache/
+**/.cache/
+
+# SQLite databases and caches
+*.db
+*.sqlite
+*.sqlite3
+*.db-*
+*.sqlite-*
+*.db-journal
+*.sqlite-journal
+cache/
+**/cache/
+*_cache.db
+*_cache.sqlite
+*_cache.sqlite3
+
+# Logs, temporary files, and generated evaluation/output data
+*.log
+*.log.*
+logs/
+tmp/
+temp/
+*.tmp
+*.bak
+*.out
+outputs/
+results/
+evaluation_results/
+
+# Private or confidential source documents
+private/
+**/private/
+private_docs/
+**/private_docs/
+personal_documents/
+**/personal_documents/
+confidential/
+**/confidential/
+local_documents/
+**/local_documents/
+
+# Keep the original teaching corpus out of the future public demo
+/assistant_api/data/docs.txt
+/assistant_api/.local/
+/assistant_api/evaluate_ragas.py
+
+# Keep the teacher's root-level setup files out of the focused runtime project
+/requirements.txt
+/установка python 3-11.txt
+
+# Keep the GigaChat teaching variant out of the future public project
+/assistant_giga/
+
+
